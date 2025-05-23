@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Masuk</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+<body>
+  
+  <!-- Toggle Button -->
+  <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+  
+  <!-- Sidebar -->
+  <div class="sidebar hide" id="sidebar">
+    <h1>Menu</h1>
+    <a href="home.html">Dashboard</a>
+    <a href="#">Profil</a>
+    <a href="#">Pengaturan</a>
+    <a href="#">Logout</a>
+  </div>
+  <script>
+  function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("hide");
+    }
+  </script>
+
+  <!-- Main Content -->
+  <nav>
+    <div class="nav-logo">coffeeFlix</div>
+    <div class="nav-links">
+      <a href="home.html">Beranda</a>
+      <a href="#">Jelajahi</a>
+      <input class="search" type="email" placeholder="Cari Film Favorit Kamu" required />
+        </div>
+      <a href="profile.html">Profil</a>
+    </div>
+  </nav>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="title">Form Daftar</div>
+      <form action="#">
+        <div class="flied">
+          <input type="email" placeholder="Masukan Email" required />
+        </div>
+        <div class="flied">
+          <input type="password" placeholder="Masukan Password" required />
+        </div>
+
+        <!-- Checkbox dan Lupa Password di satu baris -->
+        <div class="content">
+          <div class="checkbox">
+            <input type="radio" name="pilihan" value="2" onclick="toggleRadio(this)">
+            <label for="remember">Ingatkan Saya</label>
+          </div>
+        </div>
+
+        <!-- Tombol Daftar -->
+        <div class="input-field">
+          <input type="submit" value="Daftar" onclick="toggleSubmit(This)"></input>
+        </div>
+        <div class="signup-link">
+        Sudah Punya Akun? <a href="login2.html">Login Sekarang</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="node.js"></script> <!-- Load script untuk navbar -->
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Film</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div>
+  <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+
+  <div class="sidebar hide" id="sidebar">
+    <h1>Menu</h1>
+    <a href="#">Home</a>
+    <a href="#">Profil</a>
+    <a href="#">Pengaturan</a>
+    <a href="#">Logout</a>
+  </div>
+    </div>
+    <nav>
+        <div class="nav-logo">Childe</div>
+        <div class="nav-links">
+          <a href="#">Jelajahi</a>
+          <i class="fa-light fa-circle-user">
+            <a href="login2.html">Login</a>
+          </i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Selamat Datang di coffeeFlix!</h1>
+            <p>Nikmati film dan serial favorit kamu kapan saja, di mana saja.</p>
+            <a href="#" class="btn">Mulai Menonton</a>
+        </section>
+        <div class="box">
+          <input type="text" placeholder="Cari Film Favorit Kamu">
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <section class="film-list">
+            <h2>Film Populer</h2>
+            <div class="film">
+                <img src="film1.jpg" alt="Film 1">
+                <h3>Film 1</h3>
+            </div>
+            <div class="film">
+                <img src="film2.jpg" alt="Film 2">
+                <h3>Film 2</h3>
+            </div>
+            <div class="film">
+                <img src="film3.jpg" alt="Film 3">
+                <h3>Film 3</h3>
+            </div>
+            <div class="film">
+                <img src="film4.jpg" alt="Film 4">
+                <h3>Film 4</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FilmStream. Semua hak dilindungi.</p>
+    </footer>
+    
+  <script>
+  function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("hide");
+    }
+  </script>
+</body>
+</html>

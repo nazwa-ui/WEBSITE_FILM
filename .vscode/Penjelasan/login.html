@@ -1,0 +1,59 @@
+<!--ini adalah komentar, caranya adalah mengetik simbol "<!--" dan akan langsung secara otomatis.
+di sini, saya akan mengajarkan anda tentang tata cara membuat halaman form login saya.-->
+
+<!--HAI! Pertama-tama, struktur dasar html akan berisi, 
+html menggunakan <pembuka> dan pasangannya </penutup>, head, body dan html lagi.
+paham?, lalu setelah file html sudah ada, layar akan kosong, untuk meambahkan strktur dasar html adalah dengan mengetik symbol ! lalu klik 'enter'.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--menurut saya, fitur di atas tidak penting, lbih baik tidak mengubahnya.-->
+    
+    <!--masukan nama project yang kau inginkan pada title, (nama ini tidak akan mengubah fitur apapun)-->
+    <title>Document</title>
+    <!--tambahkan link= rel&ref dan masukan "stylesheet" 
+    dan href ini berguna untuk menarik nama file css nya, biasanya, kebanyakan orang akan menamainya seperti ini-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+<!--body akan menentukan isi dari web yang di tampikan.-->
+    
+<!--untuk website rapih kita butuh tata letak, dan untuk membungkus tata letak kita butuh div
+    dan div memiliki pasangan class, class berguna menarik ke suatu dalam stylesheet-->
+    <div class="wrapper">
+    <div class="container">
+    <!--container adalah bingkai, di dalamnya memiliki baris, kolom, number, dll, bernama Flexbox-->
+        <!--header untuk judul, dan form berguna untuk pengguna login bisa memasukan data-->
+        <div class="title">Form Pendaftaran</div>
+        <form action="#">
+        <!--action adalah lokasi url form nya-->
+            <div class="flied">
+                <input type="text" required>
+                <label>Masukan Email</label>
+            </div>
+            <div class="flied">
+                <input type="number" required>
+                <label>Password</label>
+            </div>
+            <div class="content">
+                <div class="input-box">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Ingatkan Saya</label>
+                </div>
+            <div class="flied">
+                <input type="submit" value="Daftar">
+            </div>
+            <hr>
+            <div class="signup-link">
+                Belum punya akun? <a href="#">Daftar Sekarang</a>
+
+            </div>
+            </div>
+            </div>
+    </div>
+</body>
+</html>

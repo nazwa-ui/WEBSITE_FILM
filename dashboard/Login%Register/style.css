@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Montserrat, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-image: url(../../1000_F_132171199_1Ky2vLoCBCxXYsC01IlrHJe7dQM3VwsM.jpg);
+  background-size: cover;
+}
+::selection {
+  color: #000000;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container that holds form */
+.container {
+  width: 380px; 
+  background: #ffffff;
+  border-radius: 25px;
+}
+.container .title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  line-height: 100px;
+  user-select: none;
+  width: 100%;
+  border-radius: 25px;
+  background-color: #333333;
+}
+.container form {
+  padding: 10px 30px 50px 30px;
+}
+.container form .flied {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  position: relative;
+}
+.container form .flied input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 2px solid grey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.container form .field input:focus,
+form .field input:valid {
+  background-color: #5911dd;
+
+}
+
+.container form .field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-weight: 400;
+  font-size: 17px;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+form .field input:focus ~ label,
+form .field input:valid ~ label {
+  top: 0px;
+  left: 10px;
+  color: #c25252;
+  font-size: 16px;
+  transform: translateY(-50%);
+}
+form .content {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+form .content .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input {
+  width: 20px;
+  height: 20px;
+  background: red;
+}
+form .content label {
+  color: #000;
+  user-select: none;
+  padding-left: 5px;
+}
+.container form .input-field input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container form .input-field input[type="submit"]:hover {
+  background: #f0f0f0; /* Ganti warna saat hover */
+}
+.container .signup-link {
+  margin-top: 5px;
+  text-align: center;
+}
+
+    
+body {
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  padding: 10px 50px ;
+  background: #333333;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cde0e0, #626e68);
+  background: linear-gradient(to right, #cde0e0, #626e68); 
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-logo {
+  padding-left: 60px;
+  font-size: 30px;
+  font-weight: 850;
+}
+
+.nav-links {
+  display: flex;
+  gap: 155px; /* Jarak antar link */
+}
+
+.nav-links a {
+  position: relative;              /* Untuk positioning pseudo-element */
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #f0f0f0;
+  border-radius: 40px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  padding: 16px 46px;
+  left: 0;
+  top: 0;
+  background: #333333;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cde0e0, #626e68);
+  background: linear-gradient(to right, #cde0e0, #626e68); 
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar h1 {
+  padding-left: 55px;
+  font-weight: 850;
+  font-size: 30px;
+  color: white;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  padding-top: 20px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #aaa;
+}
+
+/* Toggle Button */
+.menu-toggle {
+  position: fixed;
+  top: 7px;
+  left: 30px;
+  color: white;
+  background: none;  /* fallback for old browsers */
+  border: none;
+  font-size: 29px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1100;
+  border-radius: 8px;
+}
+
+/* Hide sidebar on small screens by default */
+.sidebar.hide {
+  transform: translateX(-100%);
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px;
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
