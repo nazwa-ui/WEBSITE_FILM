@@ -11,7 +11,7 @@ body {
   height: 100%;
   width: 100%;
   place-items: center;
-  background-image: url(../../1000_F_132171199_1Ky2vLoCBCxXYsC01IlrHJe7dQM3VwsM.jpg);
+  background-image:url(retro-film-7698942_1280.jpg) ;
   background-size: cover;
 }
 ::selection {
@@ -26,7 +26,7 @@ body {
 
 /* Container that holds form */
 .container {
-  width: 380px; 
+  width: 760px; 
   background: #ffffff;
   border-radius: 25px;
 }
@@ -68,11 +68,11 @@ form .field input:valid {
 }
 
 .container form .field label {
-  position: absolute;
+  position:absolute ;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
-  font-weight: 400;
+  font-weight:17 PX;
   font-size: 17px;
   color: grey;
   pointer-events: none;
@@ -135,60 +135,7 @@ body {
   height: 100vh;
 }
 
-nav {
-  width: 100%;
-  padding: 10px 50px ;
-  background: #333333;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #cde0e0, #626e68);
-  background: linear-gradient(to right, #cde0e0, #626e68); 
-  color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
 
-.nav-logo {
-  padding-left: 60px;
-  font-size: 30px;
-  font-weight: 850;
-}
-
-.nav-links {
-  display: flex;
-  gap: 155px; /* Jarak antar link */
-}
-
-.nav-links a {
-  position: relative;              /* Untuk positioning pseudo-element */
-  text-decoration: none;
-  color: black;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 3px;
-  background: #f0f0f0;
-  border-radius: 40px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.nav-links a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
 
 /* Sidebar */
 .sidebar {
@@ -203,6 +150,63 @@ nav {
   background: linear-gradient(to right, #cde0e0, #626e68); 
   transition: transform 0.3s ease;
   z-index: 1000;
+}
+nav {
+  width: 100%;
+  height: 1.2cm;
+  padding: 15px 30px;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-logo {
+  padding-left: 60px;
+  font-size: 30px;
+  font-weight: 850;
+}
+  
+.nav-links {
+  display: flex;
+  gap: 155px; /* Jarak antar link */
+}
+
+.nav-links a {
+  position: relative;              /* Untuk positioning pseudo-element */
+  text-decoration: none;
+  color: #1E656D;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #f62a00;
+  border-radius: 40px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .sidebar h1 {
@@ -227,7 +231,7 @@ nav {
 
 /* Toggle Button */
 .menu-toggle {
-  position: fixed;
+  position: left;
   top: 7px;
   left: 30px;
   color: white;
@@ -240,10 +244,13 @@ nav {
   border-radius: 8px;
 }
 
+
 /* Hide sidebar on small screens by default */
 .sidebar.hide {
   transform: translateX(-100%);
 }
+
+
 
 /* Main Content */
 .main-content {

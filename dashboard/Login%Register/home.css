@@ -104,14 +104,21 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
   width: 60px;
+  height: 60px;
+  margin: 40px auto; /* Membuatnya berada di tengah secara horizontal */
   background-color: white;
   padding: 10px 20px;
   border-radius: 50px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
-  transition: 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  gap: 8px; /* << INI YANG DITAMBAHKAN UNTUK MENGATUR JARAK */
 }
+
+.box:hover {
+  width: 400px; /* Memperluas saat hover */
+}
+
 
 .box input {
   width: 100%;
@@ -219,6 +226,41 @@ footer {
   .sidebar.hide {
     transform: translateX(-100%);
   }
+
+  .film-list h2 {
+  width: 100%;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+
+  .film-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Jarak antar film */
+  padding: 20px;
+}
+
+.film {
+  background-color: #ffffff; /* Latar belakang putih */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  width: 200px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.film img {
+  width: 100%;
+  height: auto;
+  border: 4px solid white; /* Bingkai putih */
+  border-radius: 8px;
+}
+
   
   /* Main Content */
   .main-content {
